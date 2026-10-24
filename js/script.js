@@ -1,8 +1,9 @@
 
 
 const toggleBtn = document.getElementById('theme-toggle');
+const themeMessage = document.getElementById('theme-message');
 
-// 1. Load saved theme on page load
+// Load saved theme on page load
 const savedTheme = localStorage.getItem('theme');
 
 if (savedTheme === 'dark') {
@@ -12,7 +13,20 @@ if (savedTheme === 'dark') {
     toggleBtn.textContent = "Dark Mode";
 }
 
-// 2. Toggle theme + save preference
+// Function to show message
+function showThemeMessage() {
+    themeMessage.classList.remove('hidden');
+    themeMessage.classList.add('show');
+
+    setTimeout(() => {
+        themeMessage.classList.remove('show');
+        setTimeout(() => {
+            themeMessage.classList.add('hidden');
+        }, 400);
+    }, 1500);
+}
+
+// Toggle theme + save preference
 toggleBtn.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
 
@@ -23,7 +37,11 @@ toggleBtn.addEventListener('click', () => {
         localStorage.setItem('theme', 'light');
         toggleBtn.textContent = "Dark Mode";
     }
+
+    // Show feedback message
+    showThemeMessage();
 });
+
 
 // Show / Hide Project Details
 const toggleButtons = document.querySelectorAll('.toggle-btn');
