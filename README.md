@@ -1,3 +1,4 @@
+
 # 202344070-FatimahAlqadihi-assignment1
 
 # Personal Portfolio Website
@@ -6,10 +7,10 @@ This project is a simple personal portfolio created for SWE363. Using HTML, CSS,
 
 ## How to Run Locally
 1. Download or clone the repository:
-https://github.com/Fatimah-alqadihi/202344070-FatimahAlqadihi-assignment1
+2. https://github.com/Fatimah-alqadihi/202344070-fatemaAlqadihi-assignment2
 
-2. Open the project folder in VS Code.
-3. Open `index.html` in your browser
+3. Open the project folder in VS Code.
+4. Open `index.html` in your browser
 
 ## Features
 - Clean and responsive layout (mobile-friendly)
