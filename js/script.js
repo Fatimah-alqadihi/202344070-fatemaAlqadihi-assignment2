@@ -12,3 +12,20 @@ toggleBtn.addEventListener('click', () => {
     toggleBtn.textContent = "Dark Mode";
   }
 });
+
+// Show / Hide Project Details
+const toggleButtons = document.querySelectorAll('.toggle-btn');
+
+toggleButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const details = btn.nextElementSibling;
+
+    if (details.style.display === "block") {
+      details.style.display = "none";
+      btn.textContent = "Show Details";
+    } else {
+      details.style.display = "block";
+      btn.textContent = "Hide Details";
+    }
+  });
+});
