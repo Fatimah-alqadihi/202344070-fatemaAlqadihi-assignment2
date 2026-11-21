@@ -59,3 +59,25 @@ toggleButtons.forEach(btn => {
     }
   });
 });
+
+const repoContainer = document.getElementById("repo-container");
+
+fetch("https://api.github.com/users/YOUR_GITHUB_USERNAME/repos")
+  .then(response => response.json())
+  .then(data => {
+    data.slice(0, 5).forEach(repo => {
+      const repoCard = document.createElement("div");
+
+      repoCard.innerHTML = `
+        <h3>${repo.name}</h3>
+        <p>${repo.description || "No description available"}</p>
+        <a href="${repo.html_url}" target="_blank">View Repository</a>
+      `;
+
+      repoContainer.appendChild(repoCard);
+    });
+  })
+  .catch(error => {
+    repoContainer.innerHTML =
+      "<p>Unable to load repositories at the moment.</p>";
+  });

@@ -22,3 +22,14 @@
 - How to apply responsive design.
 - How to add simple JavaScript interactivity.
 - How to document a project professionally.
+
+## Usage log
+
+| ID | Tool (model) | Date | Purpose | Files affected | What you changed & how you verified it |
+
+
+
+
+
+I declare that this report and the attached evidence document all of my AI use in this assignment, with complete and unedited conversations, and that I understand and can explain all the code I submitted. I understand that undeclared AI use or a false declaration will be treated as plagiarism according to KFUPM regulations.
+Fatema Alqadihi, 202344070
